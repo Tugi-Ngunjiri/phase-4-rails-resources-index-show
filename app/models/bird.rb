@@ -17,4 +17,8 @@ def show
     if bird
        render json: bird
     else
-        render json:
+        render json:  {error: "bird not found"}, status: : not_found
+       end
+   end
+
+end
